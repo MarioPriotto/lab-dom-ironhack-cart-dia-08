@@ -30,7 +30,7 @@ function calculateAll() {
 function removeProduct(event) {
   const target = event.currentTarget;
   const vo  = target.parentNode.parentNode;
-  const bi  = target.parentNode.parentNode.parentNode;
+  const bi  = vo.parentNode;
   bi.removeChild(vo);
   calculateAll();
 }
